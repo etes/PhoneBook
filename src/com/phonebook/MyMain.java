@@ -7,6 +7,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * (c) Ermias B. Tesfamariam 2010
+ *
+ * @author Ermias
+ * @since 09:01:39 - 21.03.2010
+ */
+
 public class MyMain {
 
 	static PhonebookExtended myPhonebook= new PhonebookExtended("Friends");

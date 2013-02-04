@@ -4,6 +4,13 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
+/**
+ * (c) Ermias B. Tesfamariam 2010
+ *
+ * @author Ermias
+ * @since 09:01:39 - 21.03.2010
+ */
+
 public class Keyboard {
 	private static final BufferedReader keyboard =
 		new BufferedReader(new InputStreamReader(System.in));

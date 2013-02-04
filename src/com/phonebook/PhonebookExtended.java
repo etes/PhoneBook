@@ -1,5 +1,11 @@
 package phone;
 
+/**
+ * (c) Ermias B. Tesfamariam 2010
+ *
+ * @author Ermias
+ * @since 09:01:39 - 21.03.2010
+ */
 //A sub class of the phone book to extend a method for looking up an email.
 public class PhonebookExtended extends Phonebook{
 

@@ -3,6 +3,13 @@ package phone;
 import java.util.ArrayList;
 
 /**
+ * (c) Ermias B. Tesfamariam 2010
+ *
+ * @author Ermias
+ * @since 09:01:39 - 21.03.2010
+ */
+ 
+/**
  * A class to store names, addresses and numbers in a phone book.
  * Methods for adding a name, address and number to the book, and
  * for looking up a name, are included.

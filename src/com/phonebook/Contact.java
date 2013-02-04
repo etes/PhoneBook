@@ -1,5 +1,12 @@
 package phone;
 
+/**
+ * (c) Ermias B. Tesfamariam 2010
+ *
+ * @author Ermias
+ * @since 09:01:39 - 21.03.2010
+ */
+
 //A simple class to store a name, address and phone number.
 public class Contact implements Item {
 	//Instance variables:
