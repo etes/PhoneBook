@@ -1,5 +1,11 @@
 package phone;
 
+/**
+ * (c) Ermias B. Tesfamariam 2010
+ *
+ * @author Ermias
+ * @since 09:01:39 - 21.03.2010
+ */
 //A class to store name, address and phone numbers of a company
 public class Company implements Item{
 //	instance variables
