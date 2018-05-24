@@ -1,4 +1,4 @@
-package phone;
+package com.phonebook;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

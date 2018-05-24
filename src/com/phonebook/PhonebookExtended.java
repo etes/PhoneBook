@@ -1,4 +1,4 @@
-package phone;
+package com.phonebook;
 
 /**
  * (c) Ermias B. Tesfamariam 2010

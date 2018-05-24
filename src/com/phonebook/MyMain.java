@@ -1,4 +1,4 @@
-package phone;
+package com.phonebook;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,10 +20,10 @@ public class MyMain {
 
 	private void test(){
 /*
-		Contact contact1 = new ContactExtended("Mary","Eritrea","07179183","maryjs@yahoo.com","20");
-		Contact contact2 = new ContactExtended("Ermias","Spain","12345","al143368@uji.es","27");
-		Contact contact3 = new ContactExtended("Abel","Kenya","456789","abega16@yahoo.com","28");
-		Company company1=new CompanyExtended("UJI","Spain","987654","uji@uji.es","30");
+		Contact contact1 = new ContactExtended("Mary","Eritrea","07179183","maryjblige@yahoo.com","20");
+		Contact contact2 = new ContactExtended("Ermias","Spain","12345","test@uji.es","27");
+		Contact contact3 = new ContactExtended("Abel","Kenya","456789","abegatest@yahoo.com","28");
+		Company company1=new CompanyExtended("UJI","Spain","987654","ujitest@uji.es","30");
 
 		myPhonebook.addItem(contact1);
 		myPhonebook.addItem(contact2);
@@ -131,7 +131,6 @@ public class MyMain {
 	}
 	// Method to save entries in to a file
 	private void doOutput() {
-		System.out.println("\n***DATA SAVED***");
 		try {
 			PrintWriter pw = new PrintWriter("data.txt");
 			for(Item tmp:myPhonebook.myItems){
@@ -141,6 +140,7 @@ public class MyMain {
 				
 			}
 			pw.close();
+			System.out.println("\n***DATA SAVED***");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -148,24 +148,26 @@ public class MyMain {
 
 	public static void main(String[] args) {
 
-		if(args.length == 1) {
-			File f = new File(args[0]);
+		if(args.length == 0) {
+			//File f = new File(args[0]);
+			File f = new File("data.txt");
 			FileReader fr;
 			try {
 				fr = new FileReader(f);
 				BufferedReader br = new BufferedReader(fr);
 				String string;
 				while((string = br.readLine())!= null){
-//					System.out.println(string);
-				String s[]= string.split(";");
-				for(int i=0; i<s.length;i++)
-					s[i]=s[i].trim();
-					String name =s[0];
-					String address =s[1];
-					String phoneNumber =s[2];
-					String email =s[3];
-					String age =s[4];
+					System.out.println(string + "\n");
+					String s[]= string.split(";");
+					for(int i=0; i<s.length;i++) 
+						s[i]=s[i].trim();
+						String name =s[0];
+						String address =s[1];
+						String phoneNumber =s[2];
+						String email =s[3];
+						String age =s[4];
 					myPhonebook.addItem(new ContactExtended(name,address,phoneNumber,email,age));
+					
 				}
 				br.close();
 			} catch(FileNotFoundException e) {
